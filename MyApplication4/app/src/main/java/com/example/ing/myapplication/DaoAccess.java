@@ -27,7 +27,4 @@ public interface DaoAccess {
     void updateMovie (Forms forms);
     @Delete
     void deleteMovie (Forms forms);
-
-    @Query("SELECT * FROM Questions WHERE formId = :formId")
-    List<Questions> fetchAllQuestionsbyFormId(int formId);
 }
